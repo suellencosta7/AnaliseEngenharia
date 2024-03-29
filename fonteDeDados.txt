@@ -1,0 +1,54 @@
+Analise sobre meios de pagamento no brasil
+
+
+
+Buscas
+Noticia sobre a evolução do pix
+https://www.cnnbrasil.com.br/economia/pix-faz-1-ano-veja-a-evolucao-do-sistema-de-pagamento-instantaneo/
+
+Criação do DOC 1985 e Ted em 2002
+https://www.poder360.com.br/economia/transacoes-via-doc-chegam-ao-fim-depois-de-4-decadas-em-operacao/ 
+
+API sobre dados transacionais
+https://olinda.bcb.gov.br/olinda/servico/MPV_DadosAbertos/versao/v1/swagger-ui3#/ 
+
+
+
+Teste de requisição ok 
+https://olinda.bcb.gov.br/olinda/servico/MPV_DadosAbertos/versao/v1/odata/Quantidadeetransacoesdecartoes(trimestre=@trimestre)?@trimestre=%2720201%27&$top=100&$format=json&$select=trimestre,nomeBandeira,nomeFuncao,qtdCartoesEmitidos,qtdCartoesAtivos,qtdTransacoesNacionais,valorTransacoesNacionais 
+
+Modelo para chamada é anotrimestre , exemplo 20201 
+
+endpoint cartoes 
+
+https://olinda.bcb.gov.br/olinda/servico/MPV_DadosAbertos/versao/v1/aplicacao#!/recursos/Quantidadeetransacoesdecartoes#eyJmb3JtdWxhcmlvIjp7IiRmb3JtYXQiOiJqc29uIiwiJHRvcCI6MTAwLCIEMAQiOiIyMDIwMSJ9LCJwcm9wcmllZGFkZXMiOlswLDEsMiw0LDUsNiw3XSwicGVzcXVpc2FkbyI6dHJ1ZSwiYWN0aXZlVGFiIjoidGFibGUiLCJncmlkU3RhdGUiOnsDMAM6W3sDQgMiBDAEIiwDQQN9LHsDQgMiBDEEIiwDQQN9LHsDQgMiBDIEIiwDQQN9LHsDQgMiBDQEIiwDQQN9LHsDQgMiBDUEIiwDQQN9LHsDQgMiBDYEIiwDQQN9LHsDQgMiBDcEIiwDQQN9XSwDMQM6e30sAzIDOltdLAMzAzp7fSwDNAM6e30sAzUDOnt9fSwicGl2b3RPcHRpb25zIjp7A2EDOnt9LANiAzpbXSwDYwM6NTAwLANkAzpbXSwDZQM6W10sA2YDOltdLANnAzoia2V5X2FfdG9feiIsA2gDOiJrZXlfYV90b196IiwDaQM6e30sA2oDOnt9LANrAzo4NSwDbAM6ZmFsc2UsA20DOnt9LANuAzp7fSwDbwM6IkNvbnRhZ2VtIiwDcAM6IlRhYmxlIn19 
+
+
+endpoint pix
+
+https://olinda.bcb.gov.br/olinda/servico/Pix_DadosAbertos/versao/v1/aplicacao#!/recursos/TransacoesPixPorMunicipio#eyJmb3JtdWxhcmlvIjp7IiRmb3JtYXQiOiJqc29uIiwiJHRvcCI6MTAwfX0= 
+
+
+CIP-SITRAF e STR
+
+
+Dados STR , API PARA CHAMADA TED - em periodo, basta colocar o final no numero do ano ex para 2002 , marca 2
+
+https://olinda.bcb.gov.br/olinda/servico/STR/versao/v1/aplicacao#!/recursos/TEDEvolucaoDiaria#eyJmb3JtdWxhcmlvIjp7IiRmb3JtYXQiOiJqc29uIiwiJHRvcCI6MTAwLCIkc2tpcCI6MjAyMDEsIiRvcmRlcmJ5IjoiTm9tZSBhc2MiLCIkZmlsdGVyIjoib21lZXEifSwicHJvcHJpZWRhZGVzIjpbMCwxXX0= 
+
+
+Endereço padrão:
+
+https ://olinda.bcb.gov.br/olinda/servico/MPV_DadosAbertos/versao/v1/odata/[codigo_recurso]?$format=json&[Outros Parâmetros] 
+
+DOC e TEC (fonte: CIP-SILOC)  
+
+Dados sobre o DOC
+https://www.cip-bancos.org.br/cip/solucoes/silc/estatisticas.html
+
+ATUALIZAÇÃO SOBRE API PARA TRAZER TODOS OS DADOS DE UM SÓ VEZ
+
+
+Os dados  podem ser obtidos na página de dados abertos, no seguinte link: https://dadosabertos.bcb.gov.br/dataset/estatisticas-meios-pagamentos
+
+DOC, junto a outros meios de pagamentos em: https://www.bcb.gov.br/estatisticas/spbadendos
