@@ -11,7 +11,7 @@ Este parametro, filtra tanto o valor ou quantidade de transações de todas as v
 em cada gráfico.
 <br>
 
-![ParametroDimensao](link)
+![ParametroDimensao](https://github.com/suellencosta7/AnaliseEngenharia/img/ParametroDimensao)
 
 <br>
 
